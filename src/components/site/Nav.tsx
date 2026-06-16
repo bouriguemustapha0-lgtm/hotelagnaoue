@@ -106,13 +106,11 @@ export function Nav() {
             </a>
           ))}
           <a
-            href={expediaUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#book"
             onClick={() => setOpen(false)}
             className="mt-6 btn-gold"
           >
-            Book on Expedia
+            Book Now
           </a>
         </nav>
       </div>
