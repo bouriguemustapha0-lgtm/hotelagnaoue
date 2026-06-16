@@ -1,19 +1,22 @@
 export const expediaUrl =
   "https://www.expedia.com/Marrakech-Hotels-Auberge-Resto-Agnaoue.h130107644.Hotel-Information";
 
-import roomRoyal from "@/assets/room-royal.jpg";
-import roomDeluxe from "@/assets/room-deluxe.jpg";
-import roomClassic from "@/assets/room-classic.jpg";
-import gDining from "@/assets/g-dining.jpg";
+import roomRoyal from "@/assets/real-royal.jpg.asset.json";
+import roomDeluxe from "@/assets/real-deluxe.jpg.asset.json";
+import roomClassic from "@/assets/real-twin.jpg.asset.json";
+import gDining from "@/assets/real-lounge.jpg.asset.json";
 import gSpa from "@/assets/g-spa.jpg";
 import gPool from "@/assets/g-pool.jpg";
 import gExterior from "@/assets/g-exterior.jpg";
 import gDetail from "@/assets/g-detail.jpg";
-import gCourtyard from "@/assets/g-courtyard.jpg";
+import gCourtyard from "@/assets/real-courtyard.jpg.asset.json";
+import roomGreen from "@/assets/real-room-green.jpg.asset.json";
+import roomYellow from "@/assets/real-room-yellow.jpg.asset.json";
+import twinTeal from "@/assets/real-twin-teal.jpg.asset.json";
 import dPizza from "@/assets/dining-pizza.jpg.asset.json";
-import dChicken from "@/assets/dining-chicken.jpg.asset.json";
+import dChicken from "@/assets/real-grill.jpg.asset.json";
 import dShawarma from "@/assets/dining-shawarma.jpg.asset.json";
-import dTagine from "@/assets/dining-tagine.jpg.asset.json";
+import dTagine from "@/assets/real-tagine.jpg.asset.json";
 import dBreakfast from "@/assets/dining-breakfast.jpg.asset.json";
 
 export const hotel = {
