@@ -74,15 +74,12 @@ export const rooms = [
 ];
 
 export const gallery = [
-  { src: gExterior, alt: "Rooftop terrace at sunset", category: "Exterior", h: "tall" },
   { src: gDining.url, alt: "Intimate dining lounge", category: "Dining", h: "tall" },
   { src: dBreakfast.url, alt: "Moroccan breakfast with mint tea", category: "Dining", h: "tall" },
   { src: dTagine.url, alt: "Traditional lamb tagine", category: "Dining", h: "short" },
   { src: dChicken.url, alt: "Grilled platter with frites", category: "Dining", h: "tall" },
   { src: dPizza.url, alt: "Wood-fired four-cheese pizza", category: "Dining", h: "short" },
   { src: dShawarma.url, alt: "Chef's mixed grill platter", category: "Dining", h: "short" },
-  { src: gPool, alt: "Outdoor pool and facade", category: "Wellness", h: "tall" },
-  { src: gSpa, alt: "Hammam spa", category: "Wellness", h: "short" },
   { src: gCourtyard.url, alt: "Riad courtyard with carved doors", category: "Interior", h: "tall" },
   { src: gDetail, alt: "Djemaa el-Fna by night", category: "Exterior", h: "short" },
   { src: roomRoyal.url, alt: "Royal Medina Suite", category: "Rooms", h: "short" },
