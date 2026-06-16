@@ -4,7 +4,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { gallery } from "@/lib/hotel";
 import { Reveal } from "./Reveal";
 
-const categories = ["All", "Rooms", "Dining"];
+const categories = ["All", "Rooms", "Dining", "Interior"];
 
 export function Gallery() {
   const [cat, setCat] = useState("All");
