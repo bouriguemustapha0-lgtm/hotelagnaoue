@@ -23,27 +23,17 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-background/85 backdrop-blur-md border-b border-border/70 py-3"
-          : "bg-transparent py-6"
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 bg-background/85 backdrop-blur-md border-b border-border/70 ${
+        scrolled ? "py-3" : "py-5"
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3 group">
-          <span
-            className={`font-serif text-2xl tracking-wide transition-colors ${
-              scrolled ? "text-foreground" : "text-cream"
-            }`}
-          >
+          <span className="font-serif text-2xl tracking-wide text-foreground">
             Agnaou
           </span>
           <span className="hidden sm:inline-block w-px h-5 bg-gold/60" />
-          <span
-            className={`hidden sm:inline text-[10px] tracking-[0.3em] uppercase transition-colors ${
-              scrolled ? "text-muted-foreground" : "text-cream/80"
-            }`}
-          >
+          <span className="hidden sm:inline text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
             Marrakech
           </span>
         </a>
@@ -53,9 +43,7 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className={`text-[11px] tracking-[0.22em] uppercase relative transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full ${
-                scrolled ? "text-foreground/80 hover:text-foreground" : "text-cream/90 hover:text-cream"
-              }`}
+              className="text-[11px] tracking-[0.22em] uppercase relative transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full text-foreground/80 hover:text-foreground"
             >
               {l.label}
             </a>
@@ -64,11 +52,7 @@ export function Nav() {
 
         <a
           href="#book"
-          className={`hidden lg:inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase border transition-all ${
-            scrolled
-              ? "border-foreground/30 text-foreground hover:bg-foreground hover:text-background"
-              : "border-cream/60 text-cream hover:bg-cream hover:text-ink"
-          }`}
+          className="hidden lg:inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase border transition-all border-foreground/30 text-foreground hover:bg-foreground hover:text-background"
         >
           Book Now
         </a>
@@ -76,7 +60,7 @@ export function Nav() {
         <button
           aria-label="Open menu"
           onClick={() => setOpen(true)}
-          className={`lg:hidden ${scrolled ? "text-foreground" : "text-cream"}`}
+          className="lg:hidden text-foreground"
         >
           <Menu className="size-6" />
         </button>
