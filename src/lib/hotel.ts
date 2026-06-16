@@ -10,6 +10,11 @@ import gPool from "@/assets/g-pool.jpg";
 import gExterior from "@/assets/g-exterior.jpg";
 import gDetail from "@/assets/g-detail.jpg";
 import gCourtyard from "@/assets/g-courtyard.jpg";
+import dPizza from "@/assets/dining-pizza.jpg.asset.json";
+import dChicken from "@/assets/dining-chicken.jpg.asset.json";
+import dShawarma from "@/assets/dining-shawarma.jpg.asset.json";
+import dTagine from "@/assets/dining-tagine.jpg.asset.json";
+import dBreakfast from "@/assets/dining-breakfast.jpg.asset.json";
 
 export const hotel = {
   name: "Agnaou",
@@ -61,6 +66,11 @@ export const rooms = [
 export const gallery = [
   { src: gExterior, alt: "Rooftop terrace at sunset", category: "Exterior", h: "tall" },
   { src: gDining, alt: "Intimate dining lounge", category: "Dining", h: "tall" },
+  { src: dBreakfast.url, alt: "Moroccan breakfast with mint tea", category: "Dining", h: "tall" },
+  { src: dTagine.url, alt: "Traditional couscous and tagine", category: "Dining", h: "short" },
+  { src: dChicken.url, alt: "Grilled chicken with frites", category: "Dining", h: "tall" },
+  { src: dPizza.url, alt: "Wood-fired four-cheese pizza", category: "Dining", h: "short" },
+  { src: dShawarma.url, alt: "Chef's mixed grill platter", category: "Dining", h: "short" },
   { src: gPool, alt: "Outdoor pool and facade", category: "Wellness", h: "tall" },
   { src: gSpa, alt: "Hammam spa", category: "Wellness", h: "short" },
   { src: gCourtyard, alt: "Courtyard fountain", category: "Interior", h: "tall" },
