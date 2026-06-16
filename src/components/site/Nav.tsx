@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { expediaUrl } from "@/lib/hotel";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -63,14 +64,16 @@ export function Nav() {
         </nav>
 
         <a
-          href="#contact"
+          href={expediaUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className={`hidden lg:inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase border transition-all ${
             scrolled
               ? "border-foreground/30 text-foreground hover:bg-foreground hover:text-background"
               : "border-cream/60 text-cream hover:bg-cream hover:text-ink"
           }`}
         >
-          Reserve
+          Book on Expedia
         </a>
 
         <button
@@ -106,11 +109,13 @@ export function Nav() {
             </a>
           ))}
           <a
-            href="#contact"
+            href={expediaUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="mt-6 btn-gold"
           >
-            Reserve a Stay
+            Book on Expedia
           </a>
         </nav>
       </div>

@@ -1,5 +1,5 @@
-import { Instagram, Facebook } from "lucide-react";
-import { hotel } from "@/lib/hotel";
+import { Instagram, Facebook, ExternalLink } from "lucide-react";
+import { hotel, expediaUrl } from "@/lib/hotel";
 
 export function Footer() {
   return (
@@ -25,6 +25,11 @@ export function Footer() {
                   <a href={`#${l.toLowerCase()}`} className="hover:text-gold transition-colors">{l}</a>
                 </li>
               ))}
+              <li>
+                <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors inline-flex items-center gap-1">
+                  Book on Expedia <ExternalLink className="size-3" />
+                </a>
+              </li>
             </ul>
           </div>
 
