@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import { gallery } from "@/lib/hotel";
+import { gallery, expediaUrl, bookingUrl } from "@/lib/hotel";
 import { Reveal } from "./Reveal";
 
 const categories = ["All", "Rooms", "Dining", "Interior"];
