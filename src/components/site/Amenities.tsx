@@ -1,7 +1,7 @@
-import { Wifi, UtensilsCrossed, Waves, Sparkles, Dumbbell, Plane, Car, Concierge } from "lucide-react";
+import { Wifi, UtensilsCrossed, Waves, Sparkles, Dumbbell, Plane, Car, BellRing, type LucideIcon } from "lucide-react";
 import { Reveal } from "./Reveal";
 
-const items = [
+const items: { icon: LucideIcon; title: string; text: string }[] = [
   { icon: Wifi, title: "Wireless Internet", text: "High-speed connectivity throughout the riad." },
   { icon: UtensilsCrossed, title: "Rooftop Restaurant", text: "Modern Moroccan cuisine under the stars." },
   { icon: Waves, title: "Courtyard Pool", text: "A turquoise plunge framed by carved arches." },
@@ -9,7 +9,7 @@ const items = [
   { icon: Dumbbell, title: "Fitness Studio", text: "Private studio with Technogym equipment." },
   { icon: Plane, title: "Airport Transfer", text: "Discreet chauffeur in a vintage Mercedes." },
   { icon: Car, title: "Valet Parking", text: "Complimentary parking at the medina gate." },
-  { icon: () => <span className="font-serif text-2xl">C</span>, title: "24h Concierge", text: "From hot-air balloon at dawn to dinner in the desert." },
+  { icon: BellRing, title: "24h Concierge", text: "From hot-air balloon at dawn to dinner in the desert." },
 ];
 
 export function Amenities() {
