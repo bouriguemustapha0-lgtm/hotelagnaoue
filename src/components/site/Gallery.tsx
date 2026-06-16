@@ -73,7 +73,7 @@ export function Gallery() {
         </div>
 
         <Reveal>
-          <div className="mt-20 flex flex-col items-center text-center gap-6 border-t border-border pt-14">
+          <div id="book" className="mt-20 flex flex-col items-center text-center gap-6 border-t border-border pt-14 scroll-mt-24">
             <p className="eyebrow"><span className="gold-rule mr-3" />Reserve your stay</p>
             <h3 className="font-serif text-3xl md:text-4xl max-w-xl">
               Choose your <em className="italic text-gold">preferred</em> booking partner.
