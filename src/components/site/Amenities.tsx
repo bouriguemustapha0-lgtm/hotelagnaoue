@@ -28,7 +28,6 @@ export function Amenities() {
             <Reveal key={title} delay={i * 0.04}>
               <div className="group p-8 md:p-10 bg-background h-full transition-colors duration-500 hover:bg-secondary/60">
                 <div className="size-12 flex items-center justify-center border border-gold/50 text-gold transition-all duration-500 group-hover:bg-gold group-hover:text-ink">
-                  {/* @ts-expect-error icon may be component or fn */}
                   <Icon className="size-5" />
                 </div>
                 <h3 className="mt-6 font-serif text-xl md:text-2xl">{title}</h3>
