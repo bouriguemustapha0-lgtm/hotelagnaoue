@@ -24,49 +24,50 @@ import rFacade from "@/assets/real-facade.jpg.asset.json";
 import rFountainBlue from "@/assets/real-fountain-blue.jpg.asset.json";
 
 export const hotel = {
-  name: "Agnaou",
+  name: "Auberge Resto Agnaoue",
   tagline: "Marrakech · Medina",
-  address: "10 Avenue Prince Moulay Rachid, Medina, 40000 Marrakech, Morocco",
+  address: "47 Pass. Prince Moulay Rachid, 40000 Marrakech, Morocco",
   phone: "+212 524 383 918",
   email: "reservations@hotel-agnaou.ma",
-  rating: 4.9,
-  reviewCount: 1049,
+  rating: 6.9,
+  reviewCount: 65,
+  locationScore: 9.1,
   founded: 2012,
 };
 
 export const rooms = [
   {
-    id: "royal",
-    name: "Royal Medina Suite",
+    id: "quadruple",
+    name: "Classic Quadruple Room",
     image: roomRoyal.url,
     description:
-      "A grand corner suite with private balcony overlooking the rose-hued rooftops of the old medina and the Koutoubia minaret at dusk.",
-    capacity: "2 Guests · King Bed",
-    size: "48 m²",
-    price: 320,
-    amenities: ["Private Terrace", "Hand-carved Cedar", "Marble Bath", "City View"],
+      "Our largest room, with two single beds and one double — ideal for families or small groups exploring the medina together.",
+    capacity: "4 Guests · 2 Singles + 1 Double",
+    size: "Family Room",
+    price: 95,
+    amenities: ["Air Conditioning", "Private Bathroom", "Free WiFi", "Flat-screen TV"],
   },
   {
-    id: "deluxe",
-    name: "Deluxe Riad Room",
+    id: "double",
+    name: "Economy Double Room",
     image: roomDeluxe.url,
     description:
-      "An elegant retreat beneath an antique painted ceiling, dressed in crisp linen, Berber rugs and the quiet glow of brass lanterns.",
-    capacity: "2 Guests · Queen Bed",
-    size: "32 m²",
-    price: 210,
-    amenities: ["Courtyard View", "Rain Shower", "Zellige Tilework", "Air Conditioning"],
+      "A comfortable double room with one large bed, private bathroom with shower, and free toiletries — a quiet base steps from Jemaa el-Fna.",
+    capacity: "2 Guests · 1 Double Bed",
+    size: "Non-smoking",
+    price: 55,
+    amenities: ["Air Conditioning", "Private Shower", "Free WiFi", "Wardrobe"],
   },
   {
-    id: "classic",
-    name: "Classic Twin",
+    id: "twin",
+    name: "Twin Room",
     image: roomClassic.url,
     description:
-      "Warm terracotta walls, twin beds in crisp white, and a small wrought-iron balcony — the romance of the medina in miniature.",
-    capacity: "2 Guests · Twin Beds",
-    size: "24 m²",
-    price: 145,
-    amenities: ["Medina Balcony", "Free WiFi", "Hand-loomed Textiles", "Soundproofed"],
+      "Two single beds, crisp white linens and a private bathroom — straightforward, restful, and a short walk from the Koutoubia minaret.",
+    capacity: "2 Guests · 2 Single Beds",
+    size: "Non-smoking",
+    price: 55,
+    amenities: ["Air Conditioning", "Private Shower", "Free WiFi", "Flat-screen TV"],
   },
 ];
 

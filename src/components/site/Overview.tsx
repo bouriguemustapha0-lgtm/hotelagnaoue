@@ -4,10 +4,10 @@ import gDetail from "@/assets/g-detail.jpg";
 import { hotel } from "@/lib/hotel";
 
 const stats = [
-  { value: "5,000+", label: "Guests Welcomed" },
-  { value: "50", label: "Luxury Rooms" },
-  { value: "4.9", label: "Guest Rating" },
-  { value: `${new Date().getFullYear() - hotel.founded}+`, label: "Years of Hospitality" },
+  { value: "9.1", label: "Location Score" },
+  { value: "400m", label: "to Jemaa el-Fna" },
+  { value: "5", label: "Room Types" },
+  { value: "24h", label: "Reception" },
 ];
 
 export function Overview() {
@@ -17,21 +17,21 @@ export function Overview() {
         <Reveal className="lg:col-span-6 order-2 lg:order-1">
           <p className="eyebrow"><span className="gold-rule mr-3" />Our Story</p>
           <h2 className="mt-5 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05]">
-            A century of hospitality, reimagined within ancient walls.
+            A small guesthouse, <em className="italic text-gold">a short walk from the square.</em>
           </h2>
           <div className="mt-8 space-y-5 text-foreground/75 text-[15px] leading-[1.85] max-w-xl">
             <p>
-              Hidden behind a hand-carved cedar door in the medina of Marrakech,
-              Agnaou is a sanctuary born from a love letter to Moroccan craft. Master
-              artisans were summoned from Fez and the Atlas Mountains to restore every
-              archway, every zellige tile, every brass lantern by hand.
+              Auberge Resto Agnaoue sits on a quiet passage of the old medina, just
+              400 metres from Jemaa el-Fna and 500 metres from the Koutoubia mosque.
+              Our guests give us a 9.1 out of 10 for location — and it is well earned.
+              Step outside the door and the heart of Marrakech is waiting for you.
             </p>
             <p>
-              We believe luxury is not opulence — it is the quiet attention paid to a
-              guest before they realise they need anything at all. It is mint tea poured
-              from a silver pot at dusk, the perfume of orange blossom in the courtyard,
-              and the kind of silence you only find in places that have been loved for a
-              very long time.
+              Inside, the spirit is simple and warm: air-conditioned rooms with private
+              bathrooms, a continental breakfast each morning, free Wi-Fi praised by
+              our guests with a perfect 10 out of 10, and a 24-hour reception ready to
+              arrange an airport shuttle, a tagine on the terrace or directions to the
+              souks.
             </p>
           </div>
 

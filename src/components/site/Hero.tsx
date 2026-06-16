@@ -73,7 +73,7 @@ export function Hero() {
             <span>Medina, Marrakech</span>
           </Stat>
           <Stat icon={<Users className="size-4 text-gold" />}>
-            <span>5,000+ guests welcomed</span>
+            <span>400 m to Jemaa el-Fna</span>
           </Stat>
         </motion.div>
       </div>
