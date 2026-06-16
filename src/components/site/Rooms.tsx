@@ -13,7 +13,7 @@ export function Rooms() {
         <Reveal className="max-w-3xl">
           <p className="eyebrow"><span className="gold-rule mr-3" />Accommodation</p>
           <h2 className="mt-5 font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.05]">
-            Fifty rooms. <em className="italic text-gold">No two alike.</em>
+            rooms. <em className="italic text-gold">No two alike.</em>
           </h2>
           <p className="mt-6 text-foreground/70 leading-relaxed max-w-xl">
             Each room is composed around a single piece — an antique door, a particular
