@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { expediaUrl } from "@/lib/hotel";
 
 const links = [
   { href: "#home", label: "Home" },
