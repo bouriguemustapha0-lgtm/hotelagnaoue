@@ -71,6 +71,7 @@ export const rooms = [
 ];
 
 export const gallery = [
+  { src: gDetail.url, alt: "Rooftop dinner under the stars", category: "Dining", h: "tall" },
   { src: gDining.url, alt: "Intimate dining lounge", category: "Dining", h: "tall" },
   { src: dBreakfast.url, alt: "Moroccan breakfast with mint tea", category: "Dining", h: "tall" },
   { src: dTagine.url, alt: "Traditional lamb tagine", category: "Dining", h: "short" },
