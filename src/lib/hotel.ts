@@ -34,7 +34,7 @@ export const rooms = [
   {
     id: "royal",
     name: "Royal Medina Suite",
-    image: roomRoyal,
+    image: roomRoyal.url,
     description:
       "A grand corner suite with private balcony overlooking the rose-hued rooftops of the old medina and the Koutoubia minaret at dusk.",
     capacity: "2 Guests · King Bed",
@@ -45,7 +45,7 @@ export const rooms = [
   {
     id: "deluxe",
     name: "Deluxe Riad Room",
-    image: roomDeluxe,
+    image: roomDeluxe.url,
     description:
       "An elegant retreat beneath an antique painted ceiling, dressed in crisp linen, Berber rugs and the quiet glow of brass lanterns.",
     capacity: "2 Guests · Queen Bed",
@@ -56,7 +56,7 @@ export const rooms = [
   {
     id: "classic",
     name: "Classic Twin",
-    image: roomClassic,
+    image: roomClassic.url,
     description:
       "Warm terracotta walls, twin beds in crisp white, and a small wrought-iron balcony — the romance of the medina in miniature.",
     capacity: "2 Guests · Twin Beds",
@@ -68,18 +68,21 @@ export const rooms = [
 
 export const gallery = [
   { src: gExterior, alt: "Rooftop terrace at sunset", category: "Exterior", h: "tall" },
-  { src: gDining, alt: "Intimate dining lounge", category: "Dining", h: "tall" },
+  { src: gDining.url, alt: "Intimate dining lounge", category: "Dining", h: "tall" },
   { src: dBreakfast.url, alt: "Moroccan breakfast with mint tea", category: "Dining", h: "tall" },
-  { src: dTagine.url, alt: "Traditional couscous and tagine", category: "Dining", h: "short" },
-  { src: dChicken.url, alt: "Grilled chicken with frites", category: "Dining", h: "tall" },
+  { src: dTagine.url, alt: "Traditional lamb tagine", category: "Dining", h: "short" },
+  { src: dChicken.url, alt: "Grilled platter with frites", category: "Dining", h: "tall" },
   { src: dPizza.url, alt: "Wood-fired four-cheese pizza", category: "Dining", h: "short" },
   { src: dShawarma.url, alt: "Chef's mixed grill platter", category: "Dining", h: "short" },
   { src: gPool, alt: "Outdoor pool and facade", category: "Wellness", h: "tall" },
   { src: gSpa, alt: "Hammam spa", category: "Wellness", h: "short" },
-  { src: gCourtyard, alt: "Courtyard fountain", category: "Interior", h: "tall" },
+  { src: gCourtyard.url, alt: "Riad courtyard with carved doors", category: "Interior", h: "tall" },
   { src: gDetail, alt: "Djemaa el-Fna by night", category: "Exterior", h: "short" },
-  { src: roomRoyal, alt: "Royal Medina Suite", category: "Rooms", h: "short" },
-  { src: roomDeluxe, alt: "Deluxe Riad Room", category: "Rooms", h: "tall" },
+  { src: roomRoyal.url, alt: "Royal Medina Suite", category: "Rooms", h: "short" },
+  { src: roomDeluxe.url, alt: "Deluxe Riad Room", category: "Rooms", h: "tall" },
+  { src: roomGreen.url, alt: "Guest room with emerald accents", category: "Rooms", h: "short" },
+  { src: roomYellow.url, alt: "Guest room with mustard headboard", category: "Rooms", h: "short" },
+  { src: twinTeal.url, alt: "Twin room with teal linens", category: "Rooms", h: "tall" },
 ];
 
 export const reviews = [
