@@ -79,7 +79,6 @@ export const gallery = [
   { src: dPizza.url, alt: "Wood-fired four-cheese pizza", category: "Dining", h: "short" },
   { src: dShawarma.url, alt: "Chef's mixed grill platter", category: "Dining", h: "short" },
   { src: gCourtyard.url, alt: "Riad courtyard with carved doors", category: "Interior", h: "tall" },
-  { src: gDetail.url, alt: "Rooftop dinner under the stars", category: "Dining", h: "tall" },
   { src: roomRoyal.url, alt: "Royal Medina Suite", category: "Rooms", h: "short" },
   { src: roomDeluxe.url, alt: "Deluxe Riad Room", category: "Rooms", h: "tall" },
   { src: roomGreen.url, alt: "Guest room with emerald accents", category: "Rooms", h: "short" },
