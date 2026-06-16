@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { X, Users, Maximize, Check } from "lucide-react";
-import { rooms } from "@/lib/hotel";
+import { X, Users, Maximize, Check, ExternalLink } from "lucide-react";
+import { rooms, expediaUrl } from "@/lib/hotel";
 import { Reveal } from "./Reveal";
 
 export function Rooms() {
@@ -113,7 +113,9 @@ export function Rooms() {
                     <div className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground">From</div>
                     <div className="font-serif text-4xl text-gold">€{active.price}<span className="text-sm text-muted-foreground"> / night</span></div>
                   </div>
-                  <a href="#contact" onClick={() => setActive(null)} className="btn-gold">Enquire</a>
+                  <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="btn-gold inline-flex items-center gap-2">
+                    <ExternalLink className="size-4" /> Book on Expedia
+                  </a>
                 </div>
               </div>
             </motion.div>

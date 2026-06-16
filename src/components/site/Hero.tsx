@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Star, MapPin, Users } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
-import { hotel } from "@/lib/hotel";
+import { hotel, expediaUrl } from "@/lib/hotel";
 
 export function Hero() {
   return (
@@ -55,7 +55,7 @@ export function Hero() {
           className="mt-10 flex flex-wrap items-center gap-4"
         >
           <a href="#rooms" className="btn-gold">Explore Rooms</a>
-          <a href="#contact" className="btn-ghost-light">Contact Hotel</a>
+          <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost-light">Book on Expedia</a>
         </motion.div>
 
         <motion.div
