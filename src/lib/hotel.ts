@@ -5,7 +5,7 @@ import roomRoyal from "@/assets/real-royal.jpg.asset.json";
 import roomDeluxe from "@/assets/real-deluxe.jpg.asset.json";
 import roomClassic from "@/assets/real-twin.jpg.asset.json";
 import gDining from "@/assets/real-lounge.jpg.asset.json";
-import gDetail from "@/assets/g-detail.jpg";
+import gDetail from "@/assets/rooftop-dinner.jpg.asset.json";
 import gCourtyard from "@/assets/real-courtyard.jpg.asset.json";
 import roomGreen from "@/assets/real-room-green.jpg.asset.json";
 import roomYellow from "@/assets/real-room-yellow.jpg.asset.json";
@@ -78,7 +78,7 @@ export const gallery = [
   { src: dPizza.url, alt: "Wood-fired four-cheese pizza", category: "Dining", h: "short" },
   { src: dShawarma.url, alt: "Chef's mixed grill platter", category: "Dining", h: "short" },
   { src: gCourtyard.url, alt: "Riad courtyard with carved doors", category: "Interior", h: "tall" },
-  { src: gDetail, alt: "Djemaa el-Fna by night", category: "Exterior", h: "short" },
+  { src: gDetail.url, alt: "Rooftop dinner under the stars", category: "Dining", h: "tall" },
   { src: roomRoyal.url, alt: "Royal Medina Suite", category: "Rooms", h: "short" },
   { src: roomDeluxe.url, alt: "Deluxe Riad Room", category: "Rooms", h: "tall" },
   { src: roomGreen.url, alt: "Guest room with emerald accents", category: "Rooms", h: "short" },
