@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import { gallery } from "@/lib/hotel";
+import { gallery, expediaUrl, bookingUrl } from "@/lib/hotel";
 import { Reveal } from "./Reveal";
 
 const categories = ["All", "Rooms", "Dining", "Interior"];
@@ -71,6 +71,23 @@ export function Gallery() {
             </motion.button>
           ))}
         </div>
+
+        <Reveal>
+          <div className="mt-20 flex flex-col items-center text-center gap-6 border-t border-border pt-14">
+            <p className="eyebrow"><span className="gold-rule mr-3" />Reserve your stay</p>
+            <h3 className="font-serif text-3xl md:text-4xl max-w-xl">
+              Choose your <em className="italic text-gold">preferred</em> booking partner.
+            </h3>
+            <div className="mt-2 flex flex-wrap items-center justify-center gap-3">
+              <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="btn-gold">
+                Book on Expedia
+              </a>
+              <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 text-xs tracking-[0.22em] uppercase border border-foreground/30 hover:bg-foreground hover:text-background transition-colors">
+                Book on Booking.com
+              </a>
+            </div>
+          </div>
+        </Reveal>
       </div>
 
       <AnimatePresence>
