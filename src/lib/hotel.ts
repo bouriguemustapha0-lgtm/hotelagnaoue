@@ -24,6 +24,17 @@ import dShawarma from "@/assets/dining-shawarma.jpg.asset.json";
 import dTagine from "@/assets/real-tagine.jpg.asset.json";
 import dBreakfast from "@/assets/dining-breakfast.jpg.asset.json";
 
+import int1 from "@/assets/interior-852742148.jpg.asset.json";
+import int2 from "@/assets/interior-852742394.jpg.asset.json";
+import int3 from "@/assets/interior-852742427.jpg.asset.json";
+import int4 from "@/assets/interior-852742884.jpg.asset.json";
+import int5 from "@/assets/interior-852742932.jpg.asset.json";
+import int6 from "@/assets/interior-852743511.jpg.asset.json";
+import int7 from "@/assets/interior-852743564.jpg.asset.json";
+import int8 from "@/assets/interior-852743570.jpg.asset.json";
+import int9 from "@/assets/interior-852743573.jpg.asset.json";
+import int10 from "@/assets/interior-852743581.jpg.asset.json";
+
 export const hotel = {
   name: "Auberge Resto Agnaoue",
   tagline: "Marrakech · Medina",
@@ -91,6 +102,16 @@ export const gallery = [
   { src: room8.url, alt: "Double room with upholstered headboard", category: "Rooms", h: "short" },
   { src: room9.url, alt: "Single room with throw blanket", category: "Rooms", h: "short" },
   { src: room10.url, alt: "Twin room with bright window", category: "Rooms", h: "tall" },
+  { src: int1.url, alt: "Stairwell with arched alcove", category: "Interior", h: "tall" },
+  { src: int2.url, alt: "Reception lounge with chandeliers", category: "Interior", h: "short" },
+  { src: int3.url, alt: "Sitting room with Berber wall plates", category: "Interior", h: "short" },
+  { src: int4.url, alt: "Atrium with wrought-iron balcony", category: "Interior", h: "tall" },
+  { src: int5.url, alt: "Arched corridor with painted ceiling", category: "Interior", h: "tall" },
+  { src: int6.url, alt: "Main salon with archway", category: "Interior", h: "short" },
+  { src: int7.url, alt: "Reception desk beneath Moorish arch", category: "Interior", h: "short" },
+  { src: int8.url, alt: "Long lounge with woven wall art", category: "Interior", h: "short" },
+  { src: int9.url, alt: "Stairs framing the atrium", category: "Interior", h: "tall" },
+  { src: int10.url, alt: "Upper gallery overlooking the courtyard", category: "Interior", h: "short" },
 ];
 
 export const reviews = [
