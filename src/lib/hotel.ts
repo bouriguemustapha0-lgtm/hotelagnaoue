@@ -90,6 +90,13 @@ export const gallery = [
   { src: roomGreen.url, alt: "Guest room with emerald accents", category: "Rooms", h: "short" },
   { src: roomYellow.url, alt: "Guest room with mustard headboard", category: "Rooms", h: "short" },
   { src: twinTeal.url, alt: "Twin room with teal linens", category: "Rooms", h: "tall" },
+  { src: rHallway.url, alt: "Arched hallway with hanging lanterns", category: "Interior", h: "short" },
+  { src: rCourtyardNight.url, alt: "Mosaic courtyard at night", category: "Interior", h: "short" },
+  { src: rPoolNight.url, alt: "Illuminated pool with arched facade", category: "Wellness", h: "short" },
+  { src: rPoolGarden.url, alt: "Garden pool with palms", category: "Wellness", h: "short" },
+  { src: rPoolAtrium.url, alt: "Indoor pool beneath the atrium", category: "Wellness", h: "tall" },
+  { src: rFacade.url, alt: "Hotel facade and pool terrace", category: "Exterior", h: "short" },
+  { src: rFountainBlue.url, alt: "Blue zellige fountain garden", category: "Exterior", h: "tall" },
 ];
 
 export const reviews = [
