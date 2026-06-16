@@ -18,6 +18,13 @@ import dChicken from "@/assets/real-grill.jpg.asset.json";
 import dShawarma from "@/assets/dining-shawarma.jpg.asset.json";
 import dTagine from "@/assets/real-tagine.jpg.asset.json";
 import dBreakfast from "@/assets/dining-breakfast.jpg.asset.json";
+import rHallway from "@/assets/real-hallway.jpg.asset.json";
+import rCourtyardNight from "@/assets/real-courtyard-night.jpg.asset.json";
+import rPoolNight from "@/assets/real-pool-night.jpg.asset.json";
+import rPoolGarden from "@/assets/real-pool-garden.jpg.asset.json";
+import rPoolAtrium from "@/assets/real-pool-atrium.jpg.asset.json";
+import rFacade from "@/assets/real-facade.jpg.asset.json";
+import rFountainBlue from "@/assets/real-fountain-blue.jpg.asset.json";
 
 export const hotel = {
   name: "Agnaou",
