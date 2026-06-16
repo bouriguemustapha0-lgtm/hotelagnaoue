@@ -5,15 +5,19 @@ export const bookingUrl =
   "https://www.booking.com/hotel/ma/auberge-resto-agnaoue.html";
 
 
-import roomRoyal from "@/assets/real-royal.jpg.asset.json";
-import roomDeluxe from "@/assets/real-deluxe.jpg.asset.json";
-import roomClassic from "@/assets/real-twin.jpg.asset.json";
+import room1 from "@/assets/room-852743505.jpg.asset.json";
+import room2 from "@/assets/room-852743530.jpg.asset.json";
+import room3 from "@/assets/room-852743536.jpg.asset.json";
+import room4 from "@/assets/room-852743547.jpg.asset.json";
+import room5 from "@/assets/room-852743583.jpg.asset.json";
+import room6 from "@/assets/room-852743595.jpg.asset.json";
+import room7 from "@/assets/room-852743609.jpg.asset.json";
+import room8 from "@/assets/room-852743634.jpg.asset.json";
+import room9 from "@/assets/room-852743638.jpg.asset.json";
+import room10 from "@/assets/room-852743640.jpg.asset.json";
 import gDining from "@/assets/real-lounge.jpg.asset.json";
 import gDetail from "@/assets/rooftop-dinner.jpg.asset.json";
 import gCourtyard from "@/assets/real-courtyard.jpg.asset.json";
-import roomGreen from "@/assets/real-room-green.jpg.asset.json";
-import roomYellow from "@/assets/real-room-yellow.jpg.asset.json";
-import twinTeal from "@/assets/real-twin-teal.jpg.asset.json";
 import dPizza from "@/assets/dining-pizza.jpg.asset.json";
 import dChicken from "@/assets/real-grill.jpg.asset.json";
 import dShawarma from "@/assets/dining-shawarma.jpg.asset.json";
@@ -43,7 +47,7 @@ export const rooms = [
   {
     id: "quadruple",
     name: "Classic Quadruple Room",
-    image: roomRoyal.url,
+    image: room7.url,
     description:
       "Our largest room, with two single beds and one double — ideal for families or small groups exploring the medina together.",
     capacity: "4 Guests · 2 Singles + 1 Double",
@@ -54,7 +58,7 @@ export const rooms = [
   {
     id: "double",
     name: "Economy Double Room",
-    image: roomDeluxe.url,
+    image: room1.url,
     description:
       "A comfortable double room with one large bed, private bathroom with shower, and free toiletries — a quiet base steps from Jemaa el-Fna.",
     capacity: "2 Guests · 1 Double Bed",
@@ -65,7 +69,7 @@ export const rooms = [
   {
     id: "twin",
     name: "Twin Room",
-    image: roomClassic.url,
+    image: room3.url,
     description:
       "Two single beds, crisp white linens and a private bathroom — straightforward, restful, and a short walk from the Koutoubia minaret.",
     capacity: "2 Guests · 2 Single Beds",
@@ -84,11 +88,16 @@ export const gallery = [
   { src: dPizza.url, alt: "Wood-fired four-cheese pizza", category: "Dining", h: "short" },
   { src: dShawarma.url, alt: "Chef's mixed grill platter", category: "Dining", h: "short" },
   { src: gCourtyard.url, alt: "Riad courtyard with carved doors", category: "Interior", h: "tall" },
-  { src: roomRoyal.url, alt: "Royal Medina Suite", category: "Rooms", h: "short" },
-  { src: roomDeluxe.url, alt: "Deluxe Riad Room", category: "Rooms", h: "tall" },
-  { src: roomGreen.url, alt: "Guest room with emerald accents", category: "Rooms", h: "short" },
-  { src: roomYellow.url, alt: "Guest room with mustard headboard", category: "Rooms", h: "short" },
-  { src: twinTeal.url, alt: "Twin room with teal linens", category: "Rooms", h: "tall" },
+  { src: room1.url, alt: "Double room with wood headboard", category: "Rooms", h: "short" },
+  { src: room2.url, alt: "Double room in soft white", category: "Rooms", h: "tall" },
+  { src: room3.url, alt: "Twin room with mosaic bathroom", category: "Rooms", h: "short" },
+  { src: room4.url, alt: "Twin room with framed art", category: "Rooms", h: "short" },
+  { src: room5.url, alt: "Twin room with stained-glass window", category: "Rooms", h: "tall" },
+  { src: room6.url, alt: "Triple room beneath carved ceiling", category: "Rooms", h: "short" },
+  { src: room7.url, alt: "Quadruple room with wall-mounted TV", category: "Rooms", h: "tall" },
+  { src: room8.url, alt: "Double room with upholstered headboard", category: "Rooms", h: "short" },
+  { src: room9.url, alt: "Single room with throw blanket", category: "Rooms", h: "short" },
+  { src: room10.url, alt: "Twin room with bright window", category: "Rooms", h: "tall" },
   { src: rHallway.url, alt: "Arched hallway with hanging lanterns", category: "Interior", h: "short" },
   { src: rCourtyardNight.url, alt: "Mosaic courtyard at night", category: "Interior", h: "short" },
   { src: rPoolNight.url, alt: "Illuminated pool with arched facade", category: "Wellness", h: "short" },
