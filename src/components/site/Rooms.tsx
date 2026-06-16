@@ -42,12 +42,6 @@ export function Rooms() {
                       {r.capacity}
                     </p>
                   </div>
-                  <div className="shrink-0 text-right">
-                    <div className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground">
-                      From
-                    </div>
-                    <div className="font-serif text-2xl text-gold">€{r.price}</div>
-                  </div>
                 </div>
                 <p className="mt-4 text-sm text-foreground/70 line-clamp-2">
                   {r.description}
@@ -108,11 +102,7 @@ export function Rooms() {
                     ))}
                   </ul>
                 </div>
-                <div className="mt-8 flex flex-wrap items-end justify-between gap-4 border-t border-border pt-6">
-                  <div>
-                    <div className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground">From</div>
-                    <div className="font-serif text-4xl text-gold">€{active.price}<span className="text-sm text-muted-foreground"> / night</span></div>
-                  </div>
+                <div className="mt-8 flex flex-wrap items-end justify-end gap-4 border-t border-border pt-6">
                   <div className="flex flex-wrap gap-2">
                     <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="btn-gold inline-flex items-center gap-2">
                       <ExternalLink className="size-4" /> Expedia
