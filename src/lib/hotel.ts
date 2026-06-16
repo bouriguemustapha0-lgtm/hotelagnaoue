@@ -17,19 +17,12 @@ import room9 from "@/assets/room-852743638.jpg.asset.json";
 import room10 from "@/assets/room-852743640.jpg.asset.json";
 import gDining from "@/assets/real-lounge.jpg.asset.json";
 import gDetail from "@/assets/rooftop-dinner.jpg.asset.json";
-import gCourtyard from "@/assets/real-courtyard.jpg.asset.json";
+
 import dPizza from "@/assets/dining-pizza.jpg.asset.json";
 import dChicken from "@/assets/real-grill.jpg.asset.json";
 import dShawarma from "@/assets/dining-shawarma.jpg.asset.json";
 import dTagine from "@/assets/real-tagine.jpg.asset.json";
 import dBreakfast from "@/assets/dining-breakfast.jpg.asset.json";
-import rHallway from "@/assets/real-hallway.jpg.asset.json";
-import rCourtyardNight from "@/assets/real-courtyard-night.jpg.asset.json";
-import rPoolNight from "@/assets/real-pool-night.jpg.asset.json";
-import rPoolGarden from "@/assets/real-pool-garden.jpg.asset.json";
-import rPoolAtrium from "@/assets/real-pool-atrium.jpg.asset.json";
-import rFacade from "@/assets/real-facade.jpg.asset.json";
-import rFountainBlue from "@/assets/real-fountain-blue.jpg.asset.json";
 
 export const hotel = {
   name: "Auberge Resto Agnaoue",
