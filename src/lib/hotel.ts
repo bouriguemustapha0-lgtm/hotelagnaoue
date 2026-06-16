@@ -59,12 +59,12 @@ export const rooms = [
 ];
 
 export const gallery = [
-  { src: gExterior, alt: "Hotel entrance at night", category: "Exterior", h: "tall" },
-  { src: gDining, alt: "Rooftop dining", category: "Dining", h: "tall" },
-  { src: gPool, alt: "Plunge pool", category: "Wellness", h: "tall" },
+  { src: gExterior, alt: "Rooftop terrace at sunset", category: "Exterior", h: "tall" },
+  { src: gDining, alt: "Intimate dining lounge", category: "Dining", h: "tall" },
+  { src: gPool, alt: "Outdoor pool and facade", category: "Wellness", h: "tall" },
   { src: gSpa, alt: "Hammam spa", category: "Wellness", h: "short" },
-  { src: gCourtyard, alt: "Riad courtyard", category: "Interior", h: "tall" },
-  { src: gDetail, alt: "Brass lantern", category: "Interior", h: "short" },
+  { src: gCourtyard, alt: "Courtyard fountain", category: "Interior", h: "tall" },
+  { src: gDetail, alt: "Djemaa el-Fna by night", category: "Exterior", h: "short" },
   { src: roomRoyal, alt: "Royal Medina Suite", category: "Rooms", h: "short" },
   { src: roomDeluxe, alt: "Deluxe Riad Room", category: "Rooms", h: "tall" },
 ];
