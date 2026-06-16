@@ -1,6 +1,10 @@
 export const expediaUrl =
   "https://www.expedia.com/Marrakech-Hotels-Auberge-Resto-Agnaoue.h130107644.Hotel-Information";
 
+export const bookingUrl =
+  "https://www.booking.com/hotel/ma/auberge-resto-agnaoue.html";
+
+
 import roomRoyal from "@/assets/real-royal.jpg.asset.json";
 import roomDeluxe from "@/assets/real-deluxe.jpg.asset.json";
 import roomClassic from "@/assets/real-twin.jpg.asset.json";

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Star, MapPin, Users } from "lucide-react";
 import heroAsset from "@/assets/agnaoue-hero.jpg.asset.json";
 const heroImg = heroAsset.url;
-import { hotel, expediaUrl } from "@/lib/hotel";
+import { hotel, expediaUrl, bookingUrl } from "@/lib/hotel";
 
 export function Hero() {
   return (
@@ -57,6 +57,7 @@ export function Hero() {
         >
           <a href="#rooms" className="btn-gold">Explore Rooms</a>
           <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost-light">Book on Expedia</a>
+          <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost-light">Book on Booking.com</a>
         </motion.div>
 
         <motion.div

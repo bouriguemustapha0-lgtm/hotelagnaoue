@@ -1,5 +1,5 @@
 import { Instagram, Facebook, ExternalLink } from "lucide-react";
-import { hotel, expediaUrl } from "@/lib/hotel";
+import { hotel, expediaUrl, bookingUrl } from "@/lib/hotel";
 
 export function Footer() {
   return (
@@ -28,6 +28,11 @@ export function Footer() {
               <li>
                 <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors inline-flex items-center gap-1">
                   Book on Expedia <ExternalLink className="size-3" />
+                </a>
+              </li>
+              <li>
+                <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors inline-flex items-center gap-1">
+                  Book on Booking.com <ExternalLink className="size-3" />
                 </a>
               </li>
             </ul>

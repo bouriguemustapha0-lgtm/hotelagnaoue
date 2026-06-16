@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, Users, Maximize, Check, ExternalLink } from "lucide-react";
-import { rooms, expediaUrl } from "@/lib/hotel";
+import { rooms, expediaUrl, bookingUrl } from "@/lib/hotel";
 import { Reveal } from "./Reveal";
 
 export function Rooms() {
@@ -108,14 +108,19 @@ export function Rooms() {
                     ))}
                   </ul>
                 </div>
-                <div className="mt-8 flex items-end justify-between border-t border-border pt-6">
+                <div className="mt-8 flex flex-wrap items-end justify-between gap-4 border-t border-border pt-6">
                   <div>
                     <div className="text-[10px] tracking-[0.25em] uppercase text-muted-foreground">From</div>
                     <div className="font-serif text-4xl text-gold">€{active.price}<span className="text-sm text-muted-foreground"> / night</span></div>
                   </div>
-                  <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="btn-gold inline-flex items-center gap-2">
-                    <ExternalLink className="size-4" /> Book on Expedia
-                  </a>
+                  <div className="flex flex-wrap gap-2">
+                    <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="btn-gold inline-flex items-center gap-2">
+                      <ExternalLink className="size-4" /> Expedia
+                    </a>
+                    <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 text-xs tracking-[0.22em] uppercase border border-foreground/30 hover:bg-foreground hover:text-background transition-colors">
+                      <ExternalLink className="size-4" /> Booking.com
+                    </a>
+                  </div>
                 </div>
               </div>
             </motion.div>
