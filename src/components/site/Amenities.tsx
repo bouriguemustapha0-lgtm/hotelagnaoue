@@ -1,15 +1,15 @@
-import { Wifi, UtensilsCrossed, Waves, Sparkles, Dumbbell, Plane, Car, BellRing, type LucideIcon } from "lucide-react";
+import { Wifi, Coffee, Plane, Car, BellRing, Wind, Sun, ConciergeBell, type LucideIcon } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const items: { icon: LucideIcon; title: string; text: string }[] = [
-  { icon: Wifi, title: "Wireless Internet", text: "High-speed connectivity throughout the riad." },
-  { icon: UtensilsCrossed, title: "Rooftop Restaurant", text: "Modern Moroccan cuisine under the stars." },
-  { icon: Waves, title: "Courtyard Pool", text: "A turquoise plunge framed by carved arches." },
-  { icon: Sparkles, title: "Hammam & Spa", text: "Traditional rose, argan and clay rituals." },
-  { icon: Dumbbell, title: "Fitness Studio", text: "Private studio with Technogym equipment." },
-  { icon: Plane, title: "Airport Transfer", text: "Discreet chauffeur in a vintage Mercedes." },
-  { icon: Car, title: "Valet Parking", text: "Complimentary parking at the medina gate." },
-  { icon: BellRing, title: "24h Concierge", text: "From hot-air balloon at dawn to dinner in the desert." },
+  { icon: Wifi, title: "Free Wi-Fi", text: "Free wireless internet throughout the property — rated 10/10 by guests." },
+  { icon: Coffee, title: "Continental Breakfast", text: "A continental breakfast is served on site each morning." },
+  { icon: Plane, title: "Airport Shuttle", text: "Transfers to and from Marrakech-Ménara airport, just 4 km away." },
+  { icon: Car, title: "Parking", text: "On-site parking available for guests arriving by car." },
+  { icon: BellRing, title: "24-Hour Reception", text: "Front desk staffed around the clock to welcome you any hour." },
+  { icon: Wind, title: "Air Conditioning", text: "Every room is air-conditioned with a private bathroom." },
+  { icon: Sun, title: "Terrace", text: "An open-air terrace to enjoy the Marrakech sunshine." },
+  { icon: ConciergeBell, title: "Room Service", text: "Order food and drinks directly to your room." },
 ];
 
 export function Amenities() {

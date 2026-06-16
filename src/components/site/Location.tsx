@@ -3,11 +3,13 @@ import { hotel } from "@/lib/hotel";
 import { Reveal } from "./Reveal";
 
 const nearby = [
-  { name: "Djemaa el-Fna", time: "4 min walk" },
-  { name: "Koutoubia Mosque", time: "8 min walk" },
-  { name: "Bahia Palace", time: "12 min walk" },
-  { name: "Majorelle Garden", time: "10 min drive" },
-  { name: "Menara Airport", time: "15 min drive" },
+  { name: "Jemaa el-Fna", time: "400 m" },
+  { name: "Koutoubia Mosque", time: "500 m" },
+  { name: "Mouassine Museum", time: "900 m" },
+  { name: "Le Jardin Secret", time: "1 km" },
+  { name: "Bahia Palace", time: "1.2 km" },
+  { name: "Majorelle Garden", time: "3 km" },
+  { name: "Marrakech-Ménara Airport", time: "4 km" },
 ];
 
 export function Location() {
