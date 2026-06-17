@@ -57,7 +57,7 @@ export function Nav() {
           </span>
         </a>
 
-        <nav className="hidden lg:flex items-center gap-9">
+        <nav className="hidden lg:flex items-center gap-9 bg-secondary/80 backdrop-blur-sm border border-border rounded-full px-7 py-3">
           {links.map((l) => (
             <a
               key={l.href}
