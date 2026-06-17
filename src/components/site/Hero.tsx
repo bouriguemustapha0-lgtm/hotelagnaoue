@@ -69,13 +69,13 @@ export function Hero() {
         >
           <Stat icon={<Star className="size-4 fill-gold text-gold" />}>
             <strong className="font-medium">{hotel.rating}</strong>
-            <span className="text-cream/70 ml-1">/ 5 · {hotel.reviewCount.toLocaleString()} reviews</span>
+            <span className="text-cream/70 ml-1">/ 5 · {hotel.reviewCount.toLocaleString()} {t("hero.stat.reviews")}</span>
           </Stat>
           <Stat icon={<MapPin className="size-4 text-gold" />}>
-            <span>Medina, Marrakech</span>
+            <span>{t("hero.stat.location")}</span>
           </Stat>
           <Stat icon={<Users className="size-4 text-gold" />}>
-            <span>400 m to Jemaa el-Fna</span>
+            <span>{t("hero.stat.distance")}</span>
           </Stat>
         </motion.div>
       </div>
