@@ -29,7 +29,7 @@ export function Hero() {
           className="eyebrow text-gold-soft"
         >
           <span className="gold-rule mr-3 align-middle" />
-          Where Moroccan Hospitality Feels Like Home
+          {t("hero.eyebrow")}
         </motion.p>
 
         <motion.h1
@@ -38,7 +38,7 @@ export function Hero() {
           transition={{ delay: 0.6, duration: 1 }}
           className="mt-6 font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[1.02] max-w-5xl"
         >
-          Stay in the Soul of <em className="italic text-gold-soft">Marrakech</em>
+          {t("hero.title.a")} <em className="italic text-gold-soft">{t("hero.title.b")}</em>
         </motion.h1>
 
         <motion.p
@@ -47,8 +47,7 @@ export function Hero() {
           transition={{ delay: 0.9, duration: 0.8 }}
           className="mt-6 max-w-xl text-cream/85 text-base md:text-lg leading-relaxed"
         >
-          Discover refined comfort and unforgettable Moroccan hospitality, four minutes
-          from Djemaa el-Fna.
+          {t("hero.subtitle")}
         </motion.p>
 
         <motion.div
