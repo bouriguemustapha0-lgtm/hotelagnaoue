@@ -42,22 +42,22 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 bg-background backdrop-blur-md border-b border-border shadow-sm ${
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 bg-ink text-cream backdrop-blur-md border-b border-ink shadow-md ${
         scrolled ? "py-3" : "py-5"
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3 group">
-          <span className="font-serif text-2xl tracking-wide text-foreground">
+          <span className="font-serif text-2xl tracking-wide text-cream">
             Agnaou
           </span>
           <span className="hidden sm:inline-block w-px h-5 bg-gold/60" />
-          <span className="hidden sm:inline text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+          <span className="hidden sm:inline text-[10px] tracking-[0.3em] uppercase text-cream/60">
             Marrakech
           </span>
         </a>
 
-        <nav className="hidden lg:flex items-center gap-9 bg-ink/90 backdrop-blur-sm border border-ink rounded-full px-7 py-3">
+        <nav className="hidden lg:flex items-center gap-9">
           {links.map((l) => (
             <a
               key={l.href}
@@ -73,7 +73,7 @@ export function Nav() {
           <div ref={langRef} className="relative">
             <button
               onClick={() => setLangOpen((o) => !o)}
-              className="flex items-center gap-1.5 text-[10px] tracking-[0.25em] uppercase text-foreground/80 hover:text-foreground transition-colors"
+              className="flex items-center gap-1.5 text-[10px] tracking-[0.25em] uppercase text-cream/80 hover:text-cream transition-colors"
               aria-label="Change language"
             >
               <Globe className="size-3.5" />
@@ -99,7 +99,7 @@ export function Nav() {
 
           <a
             href="#book"
-            className="inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase border transition-all border-foreground/30 text-foreground hover:bg-foreground hover:text-background"
+            className="inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase border transition-all border-cream/40 text-cream hover:bg-cream hover:text-ink"
           >
             {t("nav.book")}
           </a>
@@ -108,7 +108,7 @@ export function Nav() {
         <button
           aria-label="Open menu"
           onClick={() => setOpen(true)}
-          className="lg:hidden text-foreground"
+          className="lg:hidden text-cream"
         >
           <Menu className="size-6" />
         </button>
