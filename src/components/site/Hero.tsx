@@ -6,6 +6,7 @@ import { hotel, expediaUrl, bookingUrl } from "@/lib/hotel";
 import { useI18n } from "@/lib/i18n";
 
 export function Hero() {
+  const { t } = useI18n();
   return (
     <section id="home" className="relative h-screen min-h-[680px] w-full overflow-hidden">
       <motion.img
