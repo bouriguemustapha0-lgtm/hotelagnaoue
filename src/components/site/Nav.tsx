@@ -42,17 +42,17 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 bg-background backdrop-blur-md border-b border-border shadow-sm ${
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 bg-ink text-cream backdrop-blur-md border-b border-ink shadow-md ${
         scrolled ? "py-3" : "py-5"
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3 group">
-          <span className="font-serif text-2xl tracking-wide text-foreground">
+          <span className="font-serif text-2xl tracking-wide text-cream">
             Agnaou
           </span>
           <span className="hidden sm:inline-block w-px h-5 bg-gold/60" />
-          <span className="hidden sm:inline text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+          <span className="hidden sm:inline text-[10px] tracking-[0.3em] uppercase text-cream/60">
             Marrakech
           </span>
         </a>
