@@ -99,7 +99,7 @@ export function Nav() {
 
           <a
             href="#book"
-            className="inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase border transition-all border-foreground/30 text-foreground hover:bg-foreground hover:text-background"
+            className="inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase border transition-all border-cream/40 text-cream hover:bg-cream hover:text-ink"
           >
             {t("nav.book")}
           </a>
@@ -108,7 +108,7 @@ export function Nav() {
         <button
           aria-label="Open menu"
           onClick={() => setOpen(true)}
-          className="lg:hidden text-foreground"
+          className="lg:hidden text-cream"
         >
           <Menu className="size-6" />
         </button>
