@@ -73,7 +73,7 @@ export function Nav() {
           <div ref={langRef} className="relative">
             <button
               onClick={() => setLangOpen((o) => !o)}
-              className="flex items-center gap-1.5 text-[10px] tracking-[0.25em] uppercase text-foreground/80 hover:text-foreground transition-colors"
+              className="flex items-center gap-1.5 text-[10px] tracking-[0.25em] uppercase text-cream/80 hover:text-cream transition-colors"
               aria-label="Change language"
             >
               <Globe className="size-3.5" />
