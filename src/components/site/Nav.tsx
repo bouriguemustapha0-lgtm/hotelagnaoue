@@ -1,18 +1,22 @@
-import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
-
-const links = [
-  { href: "#home", label: "Home" },
-  { href: "#rooms", label: "Rooms" },
-  { href: "#amenities", label: "Amenities" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#contact", label: "Contact" },
-];
+import { useEffect, useRef, useState } from "react";
+import { Menu, X, Globe, ChevronDown } from "lucide-react";
+import { useI18n, languages, type Lang } from "@/lib/i18n";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const { lang, setLang, t } = useI18n();
+  const langRef = useRef<HTMLDivElement>(null);
+
+  const links = [
+    { href: "#home", label: t("nav.home") },
+    { href: "#rooms", label: t("nav.rooms") },
+    { href: "#amenities", label: t("nav.amenities") },
+    { href: "#gallery", label: t("nav.gallery") },
+    { href: "#reviews", label: t("nav.reviews") },
+    { href: "#contact", label: t("nav.contact") },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -20,6 +24,21 @@ export function Nav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) setLangOpen(false);
+    };
+    document.addEventListener("mousedown", onClick);
+    return () => document.removeEventListener("mousedown", onClick);
+  }, []);
+
+  const current = languages.find((l) => l.code === lang)!;
+
+  const pickLang = (code: Lang) => {
+    setLang(code);
+    setLangOpen(false);
+  };
 
   return (
     <header
@@ -50,12 +69,41 @@ export function Nav() {
           ))}
         </nav>
 
-        <a
-          href="#book"
-          className="hidden lg:inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase border transition-all border-foreground/30 text-foreground hover:bg-foreground hover:text-background"
-        >
-          Book Now
-        </a>
+        <div className="hidden lg:flex items-center gap-4">
+          <div ref={langRef} className="relative">
+            <button
+              onClick={() => setLangOpen((o) => !o)}
+              className="flex items-center gap-1.5 text-[10px] tracking-[0.25em] uppercase text-foreground/80 hover:text-foreground transition-colors"
+              aria-label="Change language"
+            >
+              <Globe className="size-3.5" />
+              {current.short}
+              <ChevronDown className={`size-3 transition-transform ${langOpen ? "rotate-180" : ""}`} />
+            </button>
+            {langOpen && (
+              <div className="absolute right-0 mt-3 min-w-[140px] bg-background border border-border shadow-lg py-1">
+                {languages.map((l) => (
+                  <button
+                    key={l.code}
+                    onClick={() => pickLang(l.code)}
+                    className={`w-full text-left px-4 py-2 text-xs tracking-wider transition-colors hover:bg-secondary ${
+                      l.code === lang ? "text-gold" : "text-foreground/80"
+                    }`}
+                  >
+                    {l.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <a
+            href="#book"
+            className="inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase border transition-all border-foreground/30 text-foreground hover:bg-foreground hover:text-background"
+          >
+            {t("nav.book")}
+          </a>
+        </div>
 
         <button
           aria-label="Open menu"
@@ -78,7 +126,7 @@ export function Nav() {
             <X className="size-6" />
           </button>
         </div>
-        <nav className="flex flex-col items-center justify-center gap-8 mt-20">
+        <nav className="flex flex-col items-center justify-center gap-8 mt-16">
           {links.map((l) => (
             <a
               key={l.href}
@@ -94,8 +142,23 @@ export function Nav() {
             onClick={() => setOpen(false)}
             className="mt-6 btn-gold"
           >
-            Book Now
+            {t("nav.book")}
           </a>
+          <div className="mt-8 flex items-center gap-3">
+            {languages.map((l) => (
+              <button
+                key={l.code}
+                onClick={() => setLang(l.code)}
+                className={`text-xs tracking-[0.22em] uppercase px-3 py-1.5 border transition-colors ${
+                  l.code === lang
+                    ? "border-gold text-gold"
+                    : "border-cream/30 text-cream/70 hover:text-cream"
+                }`}
+              >
+                {l.short}
+              </button>
+            ))}
+          </div>
         </nav>
       </div>
     </header>

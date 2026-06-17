@@ -8,6 +8,7 @@ import { Gallery } from "@/components/site/Gallery";
 import { Reviews } from "@/components/site/Reviews";
 import { Location } from "@/components/site/Location";
 import { Footer } from "@/components/site/Footer";
+import { I18nProvider } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,18 +35,20 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="bg-background text-foreground">
-      <Nav />
-      <main>
-        <Hero />
-        <Overview />
-        <Rooms />
-        <Amenities />
-        <Gallery />
-        <Reviews />
-        <Location />
-      </main>
-      <Footer />
-    </div>
+    <I18nProvider>
+      <div className="bg-background text-foreground">
+        <Nav />
+        <main>
+          <Hero />
+          <Overview />
+          <Rooms />
+          <Amenities />
+          <Gallery />
+          <Reviews />
+          <Location />
+        </main>
+        <Footer />
+      </div>
+    </I18nProvider>
   );
 }
