@@ -108,7 +108,7 @@ export function Nav() {
         <button
           aria-label="Open menu"
           onClick={() => setOpen(true)}
-          className="lg:hidden text-cream"
+          className="lg:hidden p-2 bg-ink text-cream rounded-md border border-cream/20"
         >
           <Menu className="size-6" />
         </button>
