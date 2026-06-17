@@ -27,7 +27,7 @@ export function Hero() {
           className="eyebrow text-gold-soft"
         >
           <span className="gold-rule mr-3 align-middle" />
-          A Riad in the Heart of the Medina
+          Where Moroccan Hospitality Feels Like Home
         </motion.p>
 
         <motion.h1
@@ -36,7 +36,7 @@ export function Hero() {
           transition={{ delay: 0.6, duration: 1 }}
           className="mt-6 font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[6.5rem] leading-[1.02] max-w-5xl"
         >
-          Experience Luxury <em className="italic text-gold-soft">Beyond</em> Expectations
+          Stay in the Soul of <em className="italic text-gold-soft">Marrakech</em>
         </motion.h1>
 
         <motion.p
