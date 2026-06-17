@@ -57,12 +57,12 @@ export function Nav() {
           </span>
         </a>
 
-        <nav className="hidden lg:flex items-center gap-9 bg-secondary/80 backdrop-blur-sm border border-border rounded-full px-7 py-3">
+        <nav className="hidden lg:flex items-center gap-9 bg-ink/90 backdrop-blur-sm border border-ink rounded-full px-7 py-3">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-[11px] tracking-[0.22em] uppercase relative transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full text-foreground/80 hover:text-foreground"
+              className="text-[11px] tracking-[0.22em] uppercase relative transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full text-cream/80 hover:text-cream"
             >
               {l.label}
             </a>
