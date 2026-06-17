@@ -73,7 +73,7 @@ export function Nav() {
           <div ref={langRef} className="relative">
             <button
               onClick={() => setLangOpen((o) => !o)}
-              className="flex items-center gap-1.5 text-[10px] tracking-[0.25em] uppercase text-cream/80 hover:text-cream transition-colors"
+              className="flex items-center gap-1.5 text-[10px] tracking-[0.25em] uppercase text-cream/80 hover:text-cream transition-colors bg-ink px-3 py-1.5 rounded-md border border-cream/20"
               aria-label="Change language"
             >
               <Globe className="size-3.5" />
@@ -99,7 +99,7 @@ export function Nav() {
 
           <a
             href="#book"
-            className="inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase border transition-all border-cream/40 text-cream hover:bg-cream hover:text-ink"
+            className="inline-flex items-center px-5 py-2.5 text-[10px] tracking-[0.25em] uppercase transition-all border border-cream/40 text-cream bg-ink hover:bg-cream hover:text-ink rounded-md"
           >
             {t("nav.book")}
           </a>
