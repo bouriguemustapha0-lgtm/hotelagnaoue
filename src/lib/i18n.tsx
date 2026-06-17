@@ -1,11 +1,12 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 
-export type Lang = "en" | "fr" | "es" | "ar";
+export type Lang = "en" | "fr" | "es" | "de" | "ar";
 
 export const languages: { code: Lang; label: string; short: string; dir: "ltr" | "rtl" }[] = [
   { code: "en", label: "English", short: "EN", dir: "ltr" },
   { code: "fr", label: "Français", short: "FR", dir: "ltr" },
   { code: "es", label: "Español", short: "ES", dir: "ltr" },
+  { code: "de", label: "Deutsch", short: "DE", dir: "ltr" },
   { code: "ar", label: "العربية", short: "AR", dir: "rtl" },
 ];
 
