@@ -1,11 +1,12 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 
-export type Lang = "en" | "fr" | "es" | "ar";
+export type Lang = "en" | "fr" | "es" | "de" | "ar";
 
 export const languages: { code: Lang; label: string; short: string; dir: "ltr" | "rtl" }[] = [
   { code: "en", label: "English", short: "EN", dir: "ltr" },
   { code: "fr", label: "Français", short: "FR", dir: "ltr" },
   { code: "es", label: "Español", short: "ES", dir: "ltr" },
+  { code: "de", label: "Deutsch", short: "DE", dir: "ltr" },
   { code: "ar", label: "العربية", short: "AR", dir: "rtl" },
 ];
 
@@ -71,6 +72,26 @@ const translations: Record<Lang, Dict> = {
     "hero.stat.location": "Medina, Marrakech",
     "hero.stat.distance": "400 m de Jemaa el-Fna",
     "hero.scroll": "Desliza",
+  },
+  de: {
+    "nav.home": "Startseite",
+    "nav.rooms": "Zimmer",
+    "nav.amenities": "Ausstattung",
+    "nav.gallery": "Galerie",
+    "nav.reviews": "Bewertungen",
+    "nav.contact": "Kontakt",
+    "nav.book": "Jetzt buchen",
+    "hero.eyebrow": "Wo marokkanische Gastfreundschaft sich wie Zuhause anfühlt",
+    "hero.title.a": "Wohnen Sie im Herzen von",
+    "hero.title.b": "Marrakesch",
+    "hero.subtitle": "Entdecken Sie erlesenen Komfort und unvergessliche marokkanische Gastfreundschaft, vier Minuten vom Djemaa el-Fna entfernt.",
+    "hero.cta.rooms": "Zimmer entdecken",
+    "hero.cta.expedia": "Auf Expedia buchen",
+    "hero.cta.booking": "Auf Booking.com buchen",
+    "hero.stat.reviews": "Bewertungen",
+    "hero.stat.location": "Medina, Marrakesch",
+    "hero.stat.distance": "400 m zum Jemaa el-Fna",
+    "hero.scroll": "Scrollen",
   },
   ar: {
     "nav.home": "الرئيسية",
