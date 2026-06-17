@@ -86,7 +86,7 @@ export function Hero() {
         transition={{ delay: 1.6, duration: 1 }}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 text-cream/70 text-[10px] tracking-[0.3em] uppercase flex flex-col items-center gap-2"
       >
-        <span>Scroll</span>
+        <span>{t("hero.scroll")}</span>
         <span className="w-px h-10 bg-cream/40 animate-pulse" />
       </motion.div>
     </section>
