@@ -20,6 +20,7 @@ export function Hero() {
         transition={{ duration: 8, ease: "easeOut" }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/20 to-ink/80" />
+      <div className="absolute inset-0 bg-ink/30" />
 
       <div className="relative z-10 h-full mx-auto max-w-7xl px-6 flex flex-col justify-end pb-20 md:pb-28 text-cream">
         <motion.p
