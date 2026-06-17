@@ -42,12 +42,12 @@ export function Nav() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 bg-ink text-cream backdrop-blur-md border-b border-ink shadow-md ${
-        scrolled ? "py-3" : "py-5"
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 bg-ink text-cream border-b border-ink/50 shadow-lg ${
+        scrolled ? "py-2" : "py-3"
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-3 group">
+        <a href="#home" className="flex items-center gap-3 group bg-ink px-3 py-1.5 rounded-md">
           <span className="font-serif text-2xl tracking-wide text-cream">
             Agnaou
           </span>
@@ -57,12 +57,12 @@ export function Nav() {
           </span>
         </a>
 
-        <nav className="hidden lg:flex items-center gap-9">
+        <nav className="hidden lg:flex items-center gap-2">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-[11px] tracking-[0.22em] uppercase relative transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full text-cream/80 hover:text-cream"
+              className="text-[11px] tracking-[0.22em] uppercase relative transition-colors after:content-[''] after:absolute after:left-3 after:-bottom-1 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-[calc(100%-24px)] text-cream/80 hover:text-cream bg-ink px-3 py-1.5 rounded-md"
             >
               {l.label}
             </a>
