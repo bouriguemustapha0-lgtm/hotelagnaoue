@@ -116,23 +116,36 @@ export function Nav() {
 
       {/* Mobile drawer */}
       <div
-        className={`fixed inset-0 z-50 bg-ink text-cream transition-opacity duration-500 lg:hidden ${
+        onClick={() => setOpen(false)}
+        className={`fixed inset-0 z-40 bg-ink/60 backdrop-blur-sm transition-opacity duration-500 lg:hidden ${
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
+      />
+      <aside
+        className={`fixed top-0 right-0 z-50 h-full w-[85%] max-w-sm bg-ink text-cream shadow-2xl transition-transform duration-500 ease-[cubic-bezier(0.2,0.8,0.2,1)] lg:hidden ${
+          open ? "translate-x-0" : "translate-x-full"
+        }`}
       >
-        <div className="flex justify-between items-center px-6 py-6">
+        <div className="flex justify-between items-center px-6 py-6 border-b border-cream/10">
           <span className="font-serif text-2xl">Agnaou</span>
-          <button aria-label="Close menu" onClick={() => setOpen(false)}>
+          <button
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+            className="text-cream/80 hover:text-gold transition-colors"
+          >
             <X className="size-6" />
           </button>
         </div>
-        <nav className="flex flex-col items-center justify-center gap-8 mt-16">
-          {links.map((l) => (
+        <nav className="flex flex-col px-8 pt-10 pb-8 gap-6">
+          {links.map((l, i) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="font-serif text-4xl text-cream/90 hover:text-gold transition-colors"
+              style={{ transitionDelay: open ? `${120 + i * 60}ms` : "0ms" }}
+              className={`font-serif text-3xl text-cream/90 hover:text-gold transition-all duration-500 ${
+                open ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
+              }`}
             >
               {l.label}
             </a>
@@ -140,19 +153,19 @@ export function Nav() {
           <a
             href="#book"
             onClick={() => setOpen(false)}
-            className="mt-6 btn-gold"
+            className="mt-8 btn-gold self-start"
           >
             {t("nav.book")}
           </a>
-          <div className="mt-8 flex items-center gap-3">
+          <div className="mt-10 pt-6 border-t border-cream/10 flex flex-wrap items-center gap-2">
             {languages.map((l) => (
               <button
                 key={l.code}
                 onClick={() => setLang(l.code)}
-                className={`text-xs tracking-[0.22em] uppercase px-3 py-1.5 border transition-colors ${
+                className={`text-[10px] tracking-[0.25em] uppercase px-3 py-1.5 border transition-colors ${
                   l.code === lang
                     ? "border-gold text-gold"
-                    : "border-cream/30 text-cream/70 hover:text-cream"
+                    : "border-cream/20 text-cream/60 hover:text-cream hover:border-cream/50"
                 }`}
               >
                 {l.short}
@@ -160,7 +173,7 @@ export function Nav() {
             ))}
           </div>
         </nav>
-      </div>
+      </aside>
     </header>
   );
 }
