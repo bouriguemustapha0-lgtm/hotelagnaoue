@@ -56,9 +56,9 @@ export function Hero() {
           transition={{ delay: 1.1, duration: 0.8 }}
           className="mt-10 flex flex-wrap items-center gap-4"
         >
-          <a href="#rooms" className="btn-gold">Explore Rooms</a>
-          <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost-light">Book on Expedia</a>
-          <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost-light">Book on Booking.com</a>
+          <a href="#rooms" className="btn-gold">{t("hero.cta.rooms")}</a>
+          <a href={expediaUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost-light">{t("hero.cta.expedia")}</a>
+          <a href={bookingUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost-light">{t("hero.cta.booking")}</a>
         </motion.div>
 
         <motion.div
