@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Star, MapPin, Users } from "lucide-react";
-import heroAsset from "@/assets/agnaoue-hero.jpg.asset.json";
-const heroImg = heroAsset.url;
+import heroAsset from "@/assets/agnaoue-hero.jpg";
+const heroImg = heroAsset;
 import { hotel, expediaUrl, bookingUrl } from "@/lib/hotel";
 import { useI18n } from "@/lib/i18n";
 
