@@ -9,10 +9,10 @@ import { nitro } from "nitro/vite";
 
 export default defineConfig({
   vite: {
-    plugins: [
-      nitro({
-        preset: "vercel",
-      }),
-    ],
-  },
-});
+  "observability": {
+    "logs": {
+      "enabled": false,
+      "invocation_logs": true
+    }
+  }
+}
