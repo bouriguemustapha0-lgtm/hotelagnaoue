@@ -9,10 +9,11 @@ import { nitro } from "nitro/vite";
 
 export default defineConfig({
   vite: {
-  "observability": {
-    "logs": {
-      "enabled": false,
-      "invocation_logs": true
-    }
-  }
-}
+    observability: {
+      logs: {
+        enabled: false,
+        invocation_logs: true,
+      },
+    },
+  },
+});
